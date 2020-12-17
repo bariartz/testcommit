@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Soal 1</title>
+    </head>
+    <body>
+        <script>
+        function hitungDenda(n){
+            var lp, telat, dp, dn, dn, total;
+            const deadline = 10;
+            const pel = 1000;
+            const novel = 2000;
+            const cerpen = 1500;
+            lp = n;
+            telat = n - deadline;
+            dp = pel * telat;
+            dn = novel * telat;
+            dc = cerpen * telat;
+            total = dp + dn + dc;
+
+            let result = `
+                Meminjam selama: ${lp} hari<br/>
+                Telat mengembalikan: ${telat} hari<br/>
+                Denda buku mata pelajaran: ${dp}<br/>
+                Denda Novel: ${dn}<br/>
+                Denda Cerpen: ${dc}<br/>
+                Total: ${total}<br/>
+            `;
+
+            document.write(result);
+        }
+
+        hitungDenda(14);
+        </script>
+    </body>
+</html>

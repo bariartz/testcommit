@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Soal 2</title>
+    </head>
+    <body>
+        <script>
+            function cekHuruf(kalimat, huruf){
+                var reg = "(" + huruf + ")";
+                let regex = new RegExp(reg, "g").exec(kalimat);
+                let re = kalimat.match(reg);
+                let result = huruf + " muncul sebanyak " + regex.length + " kali";
+                document.write(result);
+            }
+
+            cekHuruf("aku calon peserta bootcamp dumbways", "a");
+        </script>
+    </body>
+</html>

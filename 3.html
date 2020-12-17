@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Soal 3</title>
+        <style>
+            span {
+                font-family: Consolas;
+                letter-spacing: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function cetakPola(n){
+            for(let i = 0; i <= n / 2; i++){
+                for(let j = 0; j <= n - i; j++){
+                    if(j == n){
+                        document.write("&nbsp;&nbsp;");
+                    } else {
+                        document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+                    }
+                }
+
+                for(let k = 0; k <= i; k++){
+                    if(k < 2){
+                        document.write("*")
+                    } else if (k >= 2){
+                        document.write("**");
+                    } else {
+                        document.write("*");
+                    }
+                }
+                document.write("<br/>");
+            }
+
+            for(let i = 0; i < n / n; i++){
+                for(let j = 0; j <= n - i; j++){
+                    document.write("&nbsp;&nbsp;");
+                }
+                
+                for(let k = 0; k < n; k++){
+                    const text = ["D", "U", "M", "B", "W", "A", "Y", "S", "I", "D"];
+                    document.write("&nbsp;&nbsp;<span>" + text[k] + "</span>");
+                }
+                document.write("<br/>");
+            }
+
+            for(let i = n / 2; i >= 0; i--){
+                for(let j = 0; j <= n - i; j++){
+                    if(j == n){
+                        document.write("&nbsp;&nbsp;");
+                    } else {
+                        document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+                    }
+                }
+
+                for(let k = 0; k <= i; k++){
+                    if(k < 2){
+                        document.write("*")
+                    } else if (k >= 2){
+                        document.write("**");
+                    } else {
+                        document.write("*");
+                    }
+                }
+                document.write("<br/>");
+            }
+        }
+
+        cetakPola(10);
+        </script>
+    </body>
+</html>
